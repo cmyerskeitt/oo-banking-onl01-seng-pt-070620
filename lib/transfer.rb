@@ -1,4 +1,5 @@
-class Transfer :bank_account, :transfer
+class Transfer
+  attr_accessor:bank_account, :transfer
   
   def initialize(transfer)
     @transfer= transfer
