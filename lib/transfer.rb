@@ -17,6 +17,8 @@ class Transfer
   end 
   
   def execute_transaction
+    
+    
    if @status == "complete"
       puts "Transaction was already excuted"
     else
@@ -24,5 +26,6 @@ class Transfer
       @receiver.deposit( @amount )
       @status = "complete"
     end
+    
   end 
 end
